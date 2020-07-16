@@ -20,6 +20,18 @@ class LoginPage{
     visualizarBotaoCriarConta(){
         cy.get(loginElements.botaoCriarConta()).should('contain', 'Criar uma conta')
     }
+
+    visualizarBotaoContinuarGoogle(){
+        cy.get(loginElements.botaoGoogle()).should('contain', 'Continuar com o Google')
+    }
+
+    visualizarBotaoContinuarMicrosoft(){
+        cy.get(loginElements.botaoMicrosoft()).should('contain', 'Continuar com a Microsoft')
+    }
+
+    visualizarBotaoContinuarApple(){
+        cy.get(loginElements.botaoApple()).should('contain', 'Continuar com a Apple')
+    }
 }
 
 export default LoginPage;

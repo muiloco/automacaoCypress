@@ -18,3 +18,15 @@ Then("devo visualizar função de não conseguiu entrar", () => {
 Then("devo visualizar função de criar conta", () => {
     loginPage.visualizarBotaoCriarConta();
 })
+
+Then("devo visualizar função continuar com o google",() => {
+    loginPage.visualizarBotaoContinuarGoogle();
+})
+
+Then("devo visualizar função continuar com o microsoft", () => {
+    loginPage.visualizarBotaoContinuarMicrosoft();
+})
+
+Then("devo visualizar função continuar com o apple", () => {
+    loginPage.visualizarBotaoContinuarApple();
+})
