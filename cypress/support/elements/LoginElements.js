@@ -5,6 +5,10 @@ class LoginElements {
     botaoGoogle = () => {return '#googleButton > .label'}
     botaoMicrosoft = () => {return '#msftButton > .label'}
     botaoApple = () => {return '#signInWithAppleButton > .label'}
+    campoLogin = () => {return '#user'}
+    campoSenha = () => {return '#password'}
+    botaoFazerLogin = () => {return '#login'}
+    mensagemAlerta = () => {return '#error > .error-message'}
 }
 
 export default LoginElements

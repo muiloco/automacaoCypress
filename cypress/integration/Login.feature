@@ -18,3 +18,12 @@ Feature:Funções da tela Login no Trello
         Then devo visualizar função continuar com o google
         Then devo visualizar função continuar com o microsoft
         Then devo visualizar função continuar com o apple
+
+    Scenario: Visualizar erro ao entrar com o login inexistente
+        Given acessar o site do Trello
+        When acessar tela de Login
+        When inserir no campo email um email não valido
+        When inserir no campo senha uma senha não valida
+        When clicar no botão Fazer login
+        Then devo visualizar mensagem de erro: Este e-mail não tem uma conta
+        
