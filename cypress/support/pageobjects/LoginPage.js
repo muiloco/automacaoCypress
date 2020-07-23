@@ -38,10 +38,10 @@ class LoginPage{
         .should('contain', 'Continuar com a Apple')
     }
 
-    inserirValorLogin(valor){
+    inserirValorLogin(login){
         cy.get(loginElements.campoLogin())
         .click()
-        .type(valor)
+        .type(login)
     }
 
     inserirValorSenha(valor){
@@ -55,9 +55,9 @@ class LoginPage{
         .click()
     }
 
-    visualizarMensagemErro(){
-        cy.get(loginElements.mensagemAlerta())
-        .should('contain', 'Este e-mail não tem uma conta')
+    visualizarTexto(){
+        cy.get(loginElements.mensagemTexto())
+        .should('contain', 'Quadros Pessoais')
     }
 }
 

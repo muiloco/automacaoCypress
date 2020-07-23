@@ -8,7 +8,7 @@ class LoginElements {
     campoLogin = () => {return '#user'}
     campoSenha = () => {return '#password'}
     botaoFazerLogin = () => {return '#login'}
-    mensagemAlerta = () => {return '#error > .error-message'}
+    mensagemTexto = () => {return '.boards-page-board-section-header-name'}
 }
 
 export default LoginElements

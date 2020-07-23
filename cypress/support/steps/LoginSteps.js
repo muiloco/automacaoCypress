@@ -3,6 +3,7 @@
 import LoginPage from '../pageobjects/LoginPage'
 const loginPage = new LoginPage
 
+
 Given("acessar o site do Trello", () => {
     loginPage.acessarSite();
 })
@@ -31,18 +32,18 @@ Then("devo visualizar função continuar com o apple", () => {
     loginPage.visualizarBotaoContinuarApple();
 })
 
-When("inserir no campo email um email não valido", () => {
-    loginPage.inserirValorLogin("asdf@asdf.com");
+When("inserir no campo email um email valido", () => {
+    loginPage.inserirValorLogin("test@test.com");
 })
 
-When("inserir no campo senha uma senha não valida", () => {
-    loginPage.inserirValorSenha("teste");
+When("inserir no campo senha uma senha valida", () => {
+    loginPage.inserirValorSenha("test123");
 })
 
 When("clicar no botão Fazer login", () => {
     loginPage.clicarBotaoFazerLogin();
 })
 
-Then("devo visualizar mensagem de erro: Este e-mail não tem uma conta", () => {
-    loginPage.visualizarMensagemErro();
+Then("devo visualizar O Texto: Quadros Pessoais", () => {
+    loginPage.visualizarTexto();
 })
