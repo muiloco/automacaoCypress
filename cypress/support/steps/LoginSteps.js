@@ -33,11 +33,11 @@ Then("devo visualizar função continuar com o apple", () => {
 })
 
 When("inserir no campo email um email valido", () => {
-    loginPage.inserirValorLogin("test@test.com");
+    loginPage.inserirValorLogin(Cypress.config("email"));
 })
 
 When("inserir no campo senha uma senha valida", () => {
-    loginPage.inserirValorSenha("test123");
+    loginPage.inserirValorSenha(Cypress.config("password"));
 })
 
 When("clicar no botão Fazer login", () => {

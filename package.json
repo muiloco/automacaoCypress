@@ -4,5 +4,8 @@
     },
     "cypress-cucumber-preprocessor": {
         "step_definitions": "cypress/support/steps"
+    },
+    "devDependencies": {
+        "cypress": "^4.11.0"
     }
 }
