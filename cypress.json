@@ -4,5 +4,5 @@
     "defaultCommandTimeout": 10000,
     "baseUrl": "https://trello.com/",
     "email": "teste@teste.com",
-    "password": "teste"
+    "password": "teste123"
 }
