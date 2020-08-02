@@ -16,6 +16,6 @@ When('Acessar o Trello com uma conta valida', () => {
     loginPage.clicarBotaoFazerLogin();
 })
 
-Then('Visualizar se o caminho da url esta certa com: /iduser/boards', () => {
+Then('Visualizar se o caminho da url esta direcionando para boards', () => {
     boardsPage.validarCaminhoUrl();
 })
