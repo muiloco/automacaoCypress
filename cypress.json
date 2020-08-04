@@ -1,6 +1,6 @@
 {
-    "viewportWidth": 1024,
-    "viewportHeight": 768,
+    "viewportWidth": 1280,
+    "viewportHeight": 920,
     "defaultCommandTimeout": 10000,
     "baseUrl": "https://trello.com/",
     "email": "teste@teste.com",
